@@ -35,12 +35,12 @@ jobs:
           context: .
           push: true
           tags: |
-            <dockerhub-username>/ids706-miniproj12:latest
-            <dockerhub-username>/ids706-miniproj12:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/ids706-miniproj12:latest
+            ${{ secrets.DOCKER_USERNAME }}/ids706-miniproj12:${{ github.sha }}
 
       # Step 5: Verify the Docker image is pushed successfully
       - name: Verify Docker Image
         run: |
           echo "Docker image built and pushed to Docker Hub:"
-          echo "  - latest"
-          echo "  - ${{ github.sha }}"
+          echo "  - ${{ secrets.DOCKER_USERNAME }}/ids706-miniproj12:latest"
+          echo "  - ${{ secrets.DOCKER_USERNAME }}/ids706-miniproj12:${{ github.sha }}"
