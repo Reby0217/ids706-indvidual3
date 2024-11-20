@@ -7,9 +7,37 @@
 [![Tests](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml)
 [![Docker](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml)
 
-
 This project focuses on designing, querying, and interacting with a MySQL database using Python. It features a CI/CD pipeline that automates the building of a Docker image, which is then pushed to Docker Hub. The database contains tables representing customers, products, and orders, and the SQL queries include complex operations such as joins, aggregations, and sorting to provide valuable insights into customer purchases and order histories.
 
+---
+
+## Docker Hub Integration
+
+The Docker image for this project is automatically built through a CI/CD pipeline and pushed to Docker Hub, allowing users to pull and run the containerized application directly. Below are the instructions and a visual representation of the repository.
+
+### **Image Pull Instructions**
+
+1. **Pull the Docker Image**:  
+   To pull the image from Docker Hub, use the following command:  
+   ```bash
+   docker pull pika0217/ids706-miniproj12:latest
+   ```
+
+2. **Run the Docker Container**:  
+   Once the image is pulled, you can run it using:  
+   ```bash
+   docker run -it --rm --network="host" pika0217/ids706-miniproj12:latest
+   ```
+
+### **Docker Hub Repository**
+
+Below is a screenshot of the Docker Hub repository showing the hosted image and available tags:
+
+![Docker Hub Repository](screenshots/repo.png)
+
+![Docker Image](screenshots/dockerImage.png)
+
+---
 
 ## Getting Started
 
@@ -27,31 +55,18 @@ This project focuses on designing, querying, and interacting with a MySQL databa
    cd ids706-miniproj12
    ```
 
-2. Install dependencies:
+2. Run all setup steps in one command:
 
    ```bash
-   make install
-   ```
-3. Create and activate a virtual environment:
-   ```bash
-   make setup
+   make all
    ```
 
-4. Run the Python script:
-   ```bash
-   make run
-   ```
-
-5. Run tests:
-   ```bash
-   make test
-   ```
-
-6. Format and lint the code:
-   ```bash
-   make format
-   make lint
-   ```
+This single command will:
+- Install dependencies.
+- Create and activate a virtual environment.
+- Format and lint the code.
+- Run the tests.
+- Execute the main Python script.
 
 ---
 
@@ -64,7 +79,6 @@ To run the MySQL database in a Docker container, follow these steps:
    docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=qwer1234 -e MYSQL_DATABASE=ecommerce_db -p 3306:3306 -d mysql:8.0
    ```
 
----
 
 ## Running the Project in Docker
 
@@ -93,6 +107,7 @@ To run the project in a Docker container, follow these steps:
 ![dockerRun](screenshots/dockerRun.png)
 
 ![test](screenshots/test.png)
+
 ---
 
 ## Accessing MySQL in Docker
@@ -119,37 +134,6 @@ DESCRIBE orders; SELECT * FROM orders;
 ![Table](screenshots/table2.png)
 
 ![Table](screenshots/table3.png)
-
-
----
-
-## Docker Hub Integration
-
-The Docker image for this project is hosted on Docker Hub, allowing users to pull and run the containerized application directly. Below are the instructions and a visual representation of the repository.
-
-### **Image Pull Instructions**
-
-1. **Pull the Docker Image**:  
-   To pull the image from Docker Hub, use the following command:  
-   ```bash
-   docker pull pika0217/ids706-miniproj12:latest
-   ```
-
-2. **Run the Docker Container**:  
-   Once the image is pulled, you can run it using:  
-   ```bash
-   docker run -it --rm --network="host" pika0217/ids706-miniproj12:latest
-   ```
-`
-
-
-### **Docker Hub Repository**
-
-Below is a screenshot of the Docker Hub repository showing the hosted image and available tags:
-
-![Docker Hub Repository](screenshots/repo.png)
-
-![Docker Image](screenshots/dockerImage.png)
 
 ---
 
@@ -216,7 +200,7 @@ Last Order Date: 2023-09-17
 - **John Doe** has placed 2 orders and spent $1399.97, with the last order on `2023-09-16`.
 - **Jane Smith** has placed 1 order and spent $49.99, with the last order on `2023-09-17`.
 
-
+---
 
 ## Makefile
 
@@ -255,4 +239,4 @@ The project uses a `Makefile` to streamline development tasks, including testing
 - **All**: Run the full suite of tasks—install, setup, lint, test, and format.
   ```bash
   make all
-  ```
+  ``` 
