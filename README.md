@@ -1,10 +1,11 @@
 # IDS706 Complex SQL Query for a MySQL Database
 
 ## Continuous Integration with GitHub Actions
-[![Install](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/install.yml)
-[![Lint](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/lint.yml)
-[![Format](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/format.yml)
-[![Tests](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-miniProj6/actions/workflows/test.yml)
+[![Install](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml)
+[![Lint](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/lint.yml)
+[![Format](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/format.yml)
+[![Tests](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml)
+[![Docker](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml)
 
 
 
@@ -127,8 +128,8 @@ The project uses a `Makefile` to streamline development tasks, including testing
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Reby0217/ids706-miniProj6.git
-   cd ids706-miniProj6
+   git clone https://github.com/Reby0217/ids706-miniproj12.git
+   cd ids706-miniproj12
    ```
 
 2. Install dependencies:
@@ -189,10 +190,12 @@ To run the project in a Docker container, follow these steps:
    make docker-test
    ```
 
-### Screenshots
+### Docker
 ![Docker](screenshots/dockerBuild.png)
 
-![dockerRun.png](screenshots/dockerRun.png)
+![mySQL](screenshots/runMySQL.png)
+
+![dockerRun](screenshots/dockerRun.png)
 
 ![test](screenshots/test.png)
 ---
