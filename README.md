@@ -1,4 +1,4 @@
-# IDS706 Complex SQL Query for a MySQL Database
+# IDS706 Dockerized Application
 
 ## Continuous Integration with GitHub Actions
 [![Install](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml)
