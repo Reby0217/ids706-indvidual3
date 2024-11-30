@@ -14,7 +14,7 @@ test:
 
 # Lint the source code and tests
 lint:
-	. venv/bin/activate && ruff check src tests
+	. venv/bin/activate && ruff check main.py tests
 
 # Format all Python files
 format:

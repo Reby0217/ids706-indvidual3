@@ -1,10 +1,11 @@
 # IDS706 Dockerized Application
 
 ## Continuous Integration with GitHub Actions
-[![Install](https://github.com/Reby0217/ids706-individual3/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/install.yml)
-[![Lint](https://github.com/Reby0217/ids706-individual3/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/lint.yml)
-[![Format](https://github.com/Reby0217/ids706-individual3/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/format.yml)
-[![Tests](https://github.com/Reby0217/ids706-individual3/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/test.yml)
+[![Install](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/install.yml)
+[![Lint](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/lint.yml)
+[![Format](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/format.yml)
+[![Tests](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-indvidual3/actions/workflows/test.yml)
+
 
 
 This project focuses on designing, querying, and interacting with a MySQL database using Python. It features a CI/CD pipeline that automates the building of a Docker image, which is then pushed to Docker Hub. The database contains tables representing customers, products, and orders, and the SQL queries include complex operations such as joins, aggregations, and sorting to provide valuable insights into customer purchases and order histories.
