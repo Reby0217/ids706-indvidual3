@@ -13,7 +13,7 @@ sentiment_analyzer = pipeline(
     "sentiment-analysis",
     model="nlptown/bert-base-multilingual-uncased-sentiment",
     framework="pt",
-    device=-1
+    device=-1,
 )
 
 
@@ -27,6 +27,7 @@ def analyze_sentiment():
         return jsonify({"input": question, "sentiment": result[0]})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)

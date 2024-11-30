@@ -2,6 +2,7 @@ import unittest
 from main import app
 from unittest.mock import patch
 
+
 class TestFlaskApp(unittest.TestCase):
     def setUp(self):
         self.app = app.test_client()
@@ -14,6 +15,7 @@ class TestFlaskApp(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("POSITIVE", response.data.decode("utf-8"))
         self.assertIn("I love programming", response.data.decode("utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()
