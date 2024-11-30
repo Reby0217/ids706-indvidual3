@@ -33,19 +33,16 @@ all: install setup lint test format
 
 # Docker build and run commands
 docker-build:
-	docker build -t ids706-individual3 .
+	docker build -t ip3 .
 
 docker-run:
-	docker run -it --rm --network="host" ids706-individual3
+	docker run -it --rm --network="host" ip3
 
 docker-test:
-	docker run -it --rm --network="host" ids706-individual3 pytest tests/
+	docker run -it --rm --network="host" ip3 pytest tests/
 
-# MySQL inside the running MySQL container
-mysql-cli:
-	docker exec -it mysql-db mysql -u root -p
 
 # Clean up Docker containers and images
 docker-clean:
 	docker system prune -f
-	docker rmi ids706-individual3
+	docker rmi ip3
