@@ -1,19 +1,6 @@
-# devops
-black==22.3.0
-click==8.1.3
-pytest==7.1.3
-pytest-cov==4.0.0
-pylint==2.15.3
-boto3==1.24.87
-flake8
-nbval
+flask
+transformers
+torch
 ruff
-
-# datascience
-black[jupyter]==22.3.0
-jupyter==1.0.0
-pandas==2.0.3
-numpy==1.25.0
-matplotlib-inline==0.1.6
-seaborn==0.12.2
-mysql-connector-python==8.0.33
+black
+pytest

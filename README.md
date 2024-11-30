@@ -1,11 +1,11 @@
 # IDS706 Dockerized Application
 
 ## Continuous Integration with GitHub Actions
-[![Install](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/install.yml)
-[![Lint](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/lint.yml)
-[![Format](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/format.yml)
-[![Tests](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/test.yml)
-[![Docker](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml/badge.svg)](https://github.com/Reby0217/ids706-miniproj12/actions/workflows/docker.yml)
+[![Install](https://github.com/Reby0217/ids706-individual3/actions/workflows/install.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/install.yml)
+[![Lint](https://github.com/Reby0217/ids706-individual3/actions/workflows/lint.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/lint.yml)
+[![Format](https://github.com/Reby0217/ids706-individual3/actions/workflows/format.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/format.yml)
+[![Tests](https://github.com/Reby0217/ids706-individual3/actions/workflows/test.yml/badge.svg)](https://github.com/Reby0217/ids706-individual3/actions/workflows/test.yml)
+
 
 This project focuses on designing, querying, and interacting with a MySQL database using Python. It features a CI/CD pipeline that automates the building of a Docker image, which is then pushed to Docker Hub. The database contains tables representing customers, products, and orders, and the SQL queries include complex operations such as joins, aggregations, and sorting to provide valuable insights into customer purchases and order histories.
 
@@ -20,13 +20,13 @@ The Docker image for this project is automatically built through a CI/CD pipelin
 1. **Pull the Docker Image**:  
    To pull the image from Docker Hub, use the following command:  
    ```bash
-   docker pull pika0217/ids706-miniproj12:latest
+   docker pull pika0217/ids706-individual3:latest
    ```
 
 2. **Run the Docker Container**:  
    Once the image is pulled, you can run it using:  
    ```bash
-   docker run -it --rm --network="host" pika0217/ids706-miniproj12:latest
+   docker run -it --rm --network="host" pika0217/ids706-individual3:latest
    ```
 
 ### **Docker Hub Repository**
@@ -51,8 +51,8 @@ Below is a screenshot of the Docker Hub repository showing the hosted image and 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Reby0217/ids706-miniproj12.git
-   cd ids706-miniproj12
+   git clone https://github.com/Reby0217/ids706-individual3.git
+   cd ids706-individual3
    ```
 
 2. Run all setup steps in one command:

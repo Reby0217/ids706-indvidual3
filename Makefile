@@ -26,20 +26,20 @@ clean:
 
 # Run the application with messages
 run:
-	. venv/bin/activate && python src/cli.py
+	. venv/bin/activate && python main.py
 
 # Run all major tasks: install, setup, lint, test, format
 all: install setup lint test format
 
 # Docker build and run commands
 docker-build:
-	docker build -t ids706-miniproj12 .
+	docker build -t ids706-individual3 .
 
 docker-run:
-	docker run -it --rm --network="host" ids706-miniproj12
+	docker run -it --rm --network="host" ids706-individual3
 
 docker-test:
-	docker run -it --rm --network="host" ids706-miniproj12 pytest tests/
+	docker run -it --rm --network="host" ids706-individual3 pytest tests/
 
 # MySQL inside the running MySQL container
 mysql-cli:
@@ -48,4 +48,4 @@ mysql-cli:
 # Clean up Docker containers and images
 docker-clean:
 	docker system prune -f
-	docker rmi ids706-miniproj12
+	docker rmi ids706-individual3
